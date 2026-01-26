@@ -6,6 +6,12 @@ class SignUp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final firstNameController = TextEditingController();
+    final lastNameController = TextEditingController();
+    final emailController = TextEditingController();
+    final passwordController = TextEditingController();
+    final confirmPasswordController = TextEditingController();
+
     return Scaffold(
       backgroundColor: Colors.greenAccent, 
       body:SingleChildScrollView(
@@ -30,14 +36,38 @@ class SignUp extends StatelessWidget {
 
             // first name text field
             Container(
-              width: 50,
-              child: MyTextfield(controller:TextEditingController(), hintText: "Enter you first name", obsecureText: false, TextEditingController: null,),
-            )
+              width: 350,
+              child: MyTextfield(controller: firstNameController, hintText: "Enter your First name", obsecureText: false)),
+            
+            const SizedBox(height: 20,),
 
+            // last name text field
+            Container(
+              width: 350,
+              child: MyTextfield(controller: lastNameController, hintText: "Enter your Last name", obsecureText: false)),
 
-          
+            const SizedBox(height: 20,),
+
+            //email text field
+            Container(
+              width: 350,
+              child: MyTextfield(controller: emailController, hintText: "Enter you email", obsecureText: false)),
+
+              const SizedBox(height: 20,),
+
+            // password textField
+            Container(
+              width: 350,
+              child: MyTextfield(controller: passwordController, hintText: "Enter your password", obsecureText: true)),
+
+              const SizedBox(height: 20,),
+
+              // password confirmation textfield
+            Container(
+              width: 350,
+              child: MyTextfield(controller: confirmPasswordController, hintText: "Confirm your password", obsecureText: true)),
           ],
-        ))
+        )),
     );
   }
 }

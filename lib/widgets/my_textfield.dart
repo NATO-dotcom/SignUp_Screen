@@ -4,7 +4,7 @@ class MyTextfield extends StatelessWidget {
   final String hintText;
   final bool obsecureText;
   final controller;
-  final TextEditingController;
+  
 
 
   const MyTextfield({
@@ -12,7 +12,7 @@ class MyTextfield extends StatelessWidget {
     required this.controller,
     required this.hintText,
     required this.obsecureText,
-    required this.TextEditingController,
+
     });
 
   @override
@@ -29,7 +29,7 @@ class MyTextfield extends StatelessWidget {
         ),
         
         focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.black12),
+          borderSide: BorderSide(color: Colors.black),
           borderRadius: BorderRadius.circular(15)
         ),
 
