@@ -16,9 +16,9 @@ class SignUp extends StatelessWidget {
       backgroundColor: Colors.greenAccent, 
       body:SingleChildScrollView(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(height: 50,),
+            const SizedBox(height: 20,),
 
             //logo
             Image.asset("assets/logo.png",height:250,width:250,),
@@ -28,11 +28,11 @@ class SignUp extends StatelessWidget {
           //welcome text
             Text("Welcome to the coffee shop!",style:TextStyle(
               color: Colors.black,
-              fontSize: 20,
+              fontSize: 30,
               fontWeight: FontWeight.w400,
             )),
             
-            const SizedBox(height: 50,),
+            const SizedBox(height: 30,),
 
             // first name text field
             Container(
@@ -66,8 +66,27 @@ class SignUp extends StatelessWidget {
             Container(
               width: 350,
               child: MyTextfield(controller: confirmPasswordController, hintText: "Confirm your password", obsecureText: true)),
+
+              const SizedBox(height: 30,),
+              // sign up button
+              Container(
+                width: 350,
+                height: 50,
+                decoration: BoxDecoration(
+                  color: Colors.brown,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Center(
+                  child: Text("Sign Up",style:TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  )),
+                ),
+              ),
           ],
         )),
+              
     );
   }
 }
