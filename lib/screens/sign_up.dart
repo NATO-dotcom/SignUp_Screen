@@ -15,6 +15,7 @@ class SignUp extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.greenAccent, 
       body:SingleChildScrollView(
+        child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -39,28 +40,28 @@ class SignUp extends StatelessWidget {
               width: 350,
               child: MyTextfield(controller: firstNameController, hintText: "Enter your First name", obsecureText: false)),
             
-            const SizedBox(height: 20,),
+            const SizedBox(height: 15,),
 
             // last name text field
             Container(
               width: 350,
               child: MyTextfield(controller: lastNameController, hintText: "Enter your Last name", obsecureText: false)),
 
-            const SizedBox(height: 20,),
+            const SizedBox(height: 15,),
 
             //email text field
             Container(
               width: 350,
-              child: MyTextfield(controller: emailController, hintText: "Enter you email", obsecureText: false)),
+              child: MyTextfield(controller: emailController, hintText: "Enter your email", obsecureText: false)),
 
-              const SizedBox(height: 20,),
+              const SizedBox(height: 15,),
 
             // password textField
             Container(
               width: 350,
               child: MyTextfield(controller: passwordController, hintText: "Enter your password", obsecureText: true)),
 
-              const SizedBox(height: 20,),
+              const SizedBox(height: 15,),
 
               // password confirmation textfield
             Container(
@@ -84,9 +85,32 @@ class SignUp extends StatelessWidget {
                   )),
                 ),
               ),
+              const SizedBox(height: 20),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                Text(
+                  "Already have an account? ",
+                  style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 16,
+                  ),
+                ),
+              Text(
+                "Sign In",
+                  style: TextStyle(
+                  color: Colors.brown,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  ),
+                ),
+                ],
+          ),
+
           ],
         )),
-              
+      )       
     );
   }
 }
