@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:sign_screen/screens/sign_in.dart';
 import 'package:sign_screen/screens/sign_up.dart';
 
 void main() {
@@ -16,6 +17,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       home:SignUp(),
+
+      //Declaring the route to sign in screen
+      routes:{
+        "/sign":(context) => SignIn()
+      },
+
     );
   }
 }

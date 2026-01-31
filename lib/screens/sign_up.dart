@@ -89,7 +89,7 @@ class SignUp extends StatelessWidget {
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children:[
                 Text(
                   "Already have an account? ",
                   style: TextStyle(
@@ -97,14 +97,17 @@ class SignUp extends StatelessWidget {
                   fontSize: 16,
                   ),
                 ),
-              Text(
-                "Sign In",
-                  style: TextStyle(
-                  color: Colors.brown,
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
+              GestureDetector(
+                onTap: () => Navigator.pushNamed(context,"/sign"),
+                child: Text(
+                  "Sign In",
+                    style: TextStyle(
+                    color: Colors.brown,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
+              ),
                 ],
           ),
 
