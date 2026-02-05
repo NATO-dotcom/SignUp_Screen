@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sign_screen/navigation/home_nav.dart';
 import 'package:sign_screen/screens/home_screen.dart';
 import 'package:sign_screen/screens/sign_in.dart';
 import 'package:sign_screen/screens/sign_up.dart';
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
       //Declaring the route to sign in screen
       routes: {
         "/sign": (context) => SignIn(), 
-        "/home": (context) => HomeScreen()
+        "/home": (context) => HomeScreen(),
+        "/nav":(context) =>HomeNav()
       },
     );
   }
