@@ -13,25 +13,25 @@ class _HomeNavState extends State<HomeNav> {
     Center(
       child: Text(
         "Welcome Home",
-        style: TextStyle(color: Colors.blueGrey, fontSize: 30),
+        style: TextStyle(color: Colors.blueGrey, fontSize: 40),
       ),
     ),
     Center(
       child: Text(
         "Start to chat",
-        style: TextStyle(color: Colors.blueGrey, fontSize: 30),
+        style: TextStyle(color: Colors.blueGrey, fontSize: 40),
       ),
     ),
     Center(
       child: Text(
         "Create a community",
-        style: TextStyle(color: Colors.blueGrey, fontSize: 30),
+        style: TextStyle(color: Colors.blueGrey, fontSize: 40),
       ),
     ),
     Center(
       child: Text(
         "Personal Profile",
-        style: TextStyle(color: Colors.blueGrey, fontSize: 30),
+        style: TextStyle(color: Colors.blueGrey, fontSize: 40),
       ),
     ),
   ];
