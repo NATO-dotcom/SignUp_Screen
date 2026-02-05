@@ -67,14 +67,14 @@ class SignIn extends StatelessWidget {
                 ),
                 child: Center(
                   child: GestureDetector(
-                    onTap:() => Navigator.pushNamed(context, "/home"),
+                    onTap:() => Navigator.pushNamed(context, "/nav"),
                     child: Text(
                       "Get Started",
                       style: TextStyle(
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
-                      ),
+                      ), 
                     ),
                   ),
                 ),
